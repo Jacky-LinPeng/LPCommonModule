@@ -22,5 +22,6 @@
 #import <AFNetworking/AFNetworking.h>
 #import <SDWebImage/SDWebImage.h>
 #import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #endif /* LPCommonModule_h */
