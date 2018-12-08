@@ -20,6 +20,8 @@
 		62FEEB0021BB806F00E6E3A4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FEEAF721BB806F00E6E3A4 /* UIView+Frame.m */; };
 		62FEEB0121BB806F00E6E3A4 /* UILabel+Wonderful.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FEEAFB21BB806F00E6E3A4 /* UILabel+Wonderful.m */; };
 		62FEEB0221BB806F00E6E3A4 /* LPBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FEEAFD21BB806F00E6E3A4 /* LPBaseManager.m */; };
+		62FEEB9821BB933400E6E3A4 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FEEB3E21BB933400E6E3A4 /* UICountingLabel.m */; };
+		62FEEBB921BB933400E6E3A4 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FEEB7B21BB933400E6E3A4 /* HUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		62FEEAFD21BB806F00E6E3A4 /* LPBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPBaseManager.m; sourceTree = "<group>"; };
 		62FEEAFE21BB806F00E6E3A4 /* LPBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPBaseManager.h; sourceTree = "<group>"; };
 		62FEEB0321BB80E400E6E3A4 /* LPCommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCommonModule.h; sourceTree = "<group>"; };
+		62FEEB3D21BB933400E6E3A4 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		62FEEB3E21BB933400E6E3A4 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		62FEEB7A21BB933400E6E3A4 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		62FEEB7B21BB933400E6E3A4 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		9DB33ED1872DFEEFDAD97167 /* Pods-LPCommonModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCommonModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPCommonModule/Pods-LPCommonModule.release.xcconfig"; sourceTree = "<group>"; };
 		A33594C0FB288E0FC6F57B6F /* Pods-LPCommonModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCommonModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPCommonModule/Pods-LPCommonModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +171,7 @@
 		62FEEAF421BB806F00E6E3A4 /* LPCommonModule */ = {
 			isa = PBXGroup;
 			children = (
+				62FEEB0421BB933400E6E3A4 /* View */,
 				62FEEAF521BB806F00E6E3A4 /* Category */,
 				62FEEAFC21BB806F00E6E3A4 /* Manager */,
 				62FEEB0321BB80E400E6E3A4 /* LPCommonModule.h */,
@@ -192,6 +199,33 @@
 				62FEEAFD21BB806F00E6E3A4 /* LPBaseManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		62FEEB0421BB933400E6E3A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62FEEB3C21BB933400E6E3A4 /* UICountingLabel */,
+				62FEEB7921BB933400E6E3A4 /* HUD */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62FEEB3C21BB933400E6E3A4 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				62FEEB3D21BB933400E6E3A4 /* UICountingLabel.h */,
+				62FEEB3E21BB933400E6E3A4 /* UICountingLabel.m */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		62FEEB7921BB933400E6E3A4 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				62FEEB7A21BB933400E6E3A4 /* HUD.h */,
+				62FEEB7B21BB933400E6E3A4 /* HUD.m */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		E0D3A722BBD66B86D6E42B22 /* Frameworks */ = {
@@ -382,9 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62FEEAFF21BB806F00E6E3A4 /* NSString+Base64.m in Sources */,
+				62FEEBB921BB933400E6E3A4 /* HUD.m in Sources */,
 				62FEEB0221BB806F00E6E3A4 /* LPBaseManager.m in Sources */,
 				62FEEAC721BB7DEF00E6E3A4 /* ViewController.m in Sources */,
 				62FEEAD221BB7DF100E6E3A4 /* main.m in Sources */,
+				62FEEB9821BB933400E6E3A4 /* UICountingLabel.m in Sources */,
 				62FEEB0021BB806F00E6E3A4 /* UIView+Frame.m in Sources */,
 				62FEEAC421BB7DEF00E6E3A4 /* AppDelegate.m in Sources */,
 				62FEEB0121BB806F00E6E3A4 /* UILabel+Wonderful.m in Sources */,
@@ -560,6 +596,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LPCommonModule/LPCommonModule/View/MXSegmentedPager/lib",
+				);
 				INFOPLIST_FILE = LPCommonModule/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +618,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LPCommonModule/LPCommonModule/View/MXSegmentedPager/lib",
+				);
 				INFOPLIST_FILE = LPCommonModule/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

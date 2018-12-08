@@ -13,6 +13,7 @@
 
 #import "NSString+Base64.h"
 #import "UIView+Frame.h"
+#import "HUD.h"
 
 #import "LPBaseManager.h"
 
