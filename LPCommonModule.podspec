@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "LPCommonModule"   #私有库的名称
-s.version      = "1.0.1"   #版本号
+s.version      = "1.1.0"   #版本号
 s.summary      = "App基础,第三方pod等依赖"  #概述
 s.description  = <<-DESC
 App基础,第三方pod等依赖   #描述
