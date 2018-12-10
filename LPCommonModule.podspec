@@ -14,6 +14,8 @@ s.source       = { :git => "https://github.com/Jacky-LinPeng/LPCommonModule.git"
 
 s.source_files  = "LPCommonModule/LPCommonModule/**/*.{h,m}"   #路径 前面的表示私有库名，后面表示私有库中的内容
 
+s.public_header_files = 'LPCommonModule/LPCommonModule/**/*.h'
+
 s.exclude_files = "Classes/Exclude"
 
 s.requires_arc = true

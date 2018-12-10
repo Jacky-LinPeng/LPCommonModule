@@ -8,4 +8,5 @@ target 'LPCommonModule' do
   pod 'YYText', '~> 1.0.7'
   pod 'Masonry', '~> 1.1.0'
   pod 'SVProgressHUD'
+  pod 'CTMediator', '~> 25'
 end
