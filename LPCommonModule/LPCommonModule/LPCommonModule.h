@@ -14,7 +14,7 @@
 #import "NSString+Base64.h"
 #import "UIView+Frame.h"
 #import "HUD.h"
-
+#import "UICountingLabel.h"
 #import "LPBaseManager.h"
 
 //3rd lib

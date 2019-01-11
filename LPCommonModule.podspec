@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "LPCommonModule"   #私有库的名称
-s.version      = "1.1.0"   #版本号
+s.version      = "1.1.1"   #版本号
 s.summary      = "App基础,第三方pod等依赖"  #概述
 s.description  = <<-DESC
 App基础,第三方pod等依赖   #描述
@@ -12,9 +12,22 @@ s.platform     = :ios, "8.0"
 
 s.source       = { :git => "https://github.com/Jacky-LinPeng/LPCommonModule.git", :tag => s.version.to_s }   #这个是git上   releases的代码，以后每次版本升级，都会传到这里
 
-s.source_files  = "LPCommonModule/LPCommonModule/**/*.{h,m}"   #路径 前面的表示私有库名，后面表示私有库中的内容
+s.source_files  = "LPCommonModule/LPCommonModule/LPCommonModule.h"   #路径 前面的表示私有库名，后面表示私有库中的内容
 
-s.public_header_files = 'LPCommonModule/LPCommonModule/**/*.h'
+#s.public_header_files = 'LPCommonModule/LPCommonModule/LPCommonModule.h'
+
+s.subspec 'CommomView' do |ss|
+    ss.ios.deployment_target = '8.0'
+    ss.source_files = 'LPCommonModule/LPCommonModule/View/**/*.{h,m}'
+end
+s.subspec 'CommomManager' do |ss|
+    ss.ios.deployment_target = '8.0'
+    ss.source_files = 'LPCommonModule/LPCommonModule/Manager/*.{h,m}'
+end
+s.subspec 'CommomCategory' do |ss|
+    ss.ios.deployment_target = '8.0'
+    ss.source_files = 'LPCommonModule/LPCommonModule/Category/*.{h,m}'
+end
 
 s.exclude_files = "Classes/Exclude"
 
